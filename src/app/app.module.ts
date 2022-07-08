@@ -7,6 +7,7 @@ import { HelloComponent } from './hello.component';
 import { CheckInComponent } from './check-in/check-in.component';
 import { RouterModule, Routes } from '@angular/router';
 import { AppointmentComponent } from './appointment/appointment.component';
+import { StoreModule } from '@ngrx/store';
 
 const routes: Routes = [
   {
@@ -24,6 +25,7 @@ const routes: Routes = [
     FormsModule,
     ReactiveFormsModule,
     RouterModule.forRoot(routes),
+    StoreModule.forRoot({}),
   ],
   declarations: [
     AppComponent,
